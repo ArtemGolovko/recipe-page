@@ -24,3 +24,12 @@
     --color-rose-800: hsl(332, 51%, 32%);
     --color-rose-50: hsl(330, 100%, 98%);
 }
+
+@layer components {
+    .list-custom-marker li::before {
+        content: "•";
+        color: var(--color-rose-800);
+        margin-right: 28px;
+        font-weight: 800;
+    }
+}
